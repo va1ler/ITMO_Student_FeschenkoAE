@@ -66,7 +66,7 @@ import java.util.Arrays;
         return Math.cbrt(x);
     }
 }*/
-public class Main {
+/*public class Main {
     public static void main(String[] args){
         long[] l = new long[7];
         int a = 0;
@@ -77,5 +77,18 @@ public class Main {
         for (int i = 0; i < l.length; i++){
             System.out.printf("%5.0f%n",(double) l[i]);
         }
+    }
+}*/
+
+
+public class Main {
+    public static void main(String[] args){
+
+    }
+    public static double calculateElement(long li, double x){
+        return 0;
+    }
+    public static double printMatrix(double[][] matrix){
+        return 0;
     }
 }
