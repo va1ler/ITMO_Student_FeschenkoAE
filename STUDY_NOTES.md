@@ -60,6 +60,8 @@
 - 27.09 проверка Informatica: Фещенко_ЛР1_Вариант6.docx НЕ удалён — перемещён в Informatica/Labs/laba1/. А `Informatica/Отчет_Лабораторная_работа_1_Вариант_6.docx` (87 КБ) реально пропал с диска, но есть в git → можно восстановить `git restore`. Спросить студента. Также staged-удаление ITMO_CODING_JAVA/.gitignore (студент говорит, что не удалял).
 - 27.09: Claude создал корневой .gitignore (.DS_Store, .idea/workspace.xml, out/, *.class, ~$*) и убрал .DS_Store из индекса (git rm --cached).
 - Шаги для студента: git config --global user.name/email → git add -A → git commit → создать ПРИВАТНЫЙ репозиторий на github.com → подключить через IntelliJ (GitHub-аккаунт + Manage Remotes) → Push.
+- ✅ 27.09: репозиторий https://github.com/va1ler/ITMO_Student_FeschenkoAE (Private), remote origin, первый push сделан (main → origin/main).
+- Цикл работы: git add -A → git commit -m "..." → Push (в IntelliJ ⌘⇧K).
 - English/studentbook.pdf = 98 МБ (лимит GitHub 100 МБ на файл) — пройдёт с предупреждением.
 
 ## Расписание (из my.itmo, получено 27.09)
