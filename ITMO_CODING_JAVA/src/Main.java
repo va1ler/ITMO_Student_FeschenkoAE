@@ -83,7 +83,10 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args){
-
+        long[] l = new long[7];
+        for (int i = 0; i < 7; i++){
+            l[i] = 16-2*i;
+        }
     }
     public static double calculateElement(long li, double x){
         return 0;
