@@ -15,12 +15,12 @@ Main.java  --javac-->  Main.class (байт-код)  --jar-->  lab1.jar  --java 
 ```bash
 cd ~/Documents/ITMO_Student_FeschenkoAE/ITMO_CODING_JAVA
 
-javac --release 21 -d build src/Main.java     # 1. компиляция в папку build/
+javac --release 17 -d build src/Main.java     # 1. компиляция в папку build/
 jar cfe lab1.jar Main -C build .              # 2. упаковка в jar
 java -jar lab1.jar                            # 3. проверка
 ```
 Разбор флагов:
-- `--release 21`: компилировать под Java 21, чтобы точно запустилось на helios.
+- `--release 17`: компилировать под Java 17 — на helios стоит именно 17 (проверено 27.09), байт-код от 21 там не запустится.
 - `-d build`: складывать `.class` в папку `build`.
 - `jar c f e`: **c**reate (создать), **f**ile (имя архива `lab1.jar`), **e**ntry point (главный класс `Main`, он попадёт в манифест).
 - `-C build .`: зайти в папку `build` и взять оттуда всё (`.`).
@@ -38,7 +38,7 @@ jar cfm lab1.jar manifest.txt -C build .
 ```bash
 scp -P 2222 lab1.jar s561306@helios.cs.ifmo.ru:~/     # скопировать jar в домашнюю папку на helios
 ssh -p 2222 s561306@helios.cs.ifmo.ru                 # зайти на helios
-java -version                                         # убедиться, что там 21
+java -version                                         # на helios стоит Java 17
 java -jar lab1.jar                                    # запуск
 exit                                                  # выйти
 ```
