@@ -1,0 +1,11 @@
+# --- macOS: служебные файлы Finder ---
+.DS_Store
+
+# --- IntelliJ IDEA: личные настройки и результаты сборки ---
+.idea/workspace.xml
+.idea/shelf/
+out/
+*.class
+
+# --- Временные файлы Word (появляются, пока документ открыт) ---
+~$*
