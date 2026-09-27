@@ -1,13 +1,81 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.util.Arrays;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+/*public class Main{
+    public static void main(String[] args) {
+        System.out.println("hello sasha");
+    }
+}*/
+/*public class Main{
+    public static void main(String[] args){
+        System.out.println(3/4);
+        System.out.println(7.0/2);
+        System.out.println((int) 7.9);
+        System.out.println(7 % 2);
+    }
+}*/
+/*public class Main{
+    public static void main(String[] args){
+        System.out.println(Math.pow(-8, 1.0/3));
+        System.out.println(Math.cbrt(-8));
+        System.out.println(1.0 / 0);
+        System.out.println(0.0 / 0);
+    }
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        System.out.println(2+3*4);
+        System.out.println((2+3)*4);
+        System.out.println(10-4-3);
+    }
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        long v = 14;
+        if (v == 10) {
+            System.out.println("десять");
+        } else if (v == 8 || v == 12 || v ==16) {
+            System.out.println("8, 12, or 16");
+        } else {
+            System.out.println("что-то другое");
+        }
+    }
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        for (int i = 16; i > 3; i-=2){
+            System.out.print(i + " ");
+        }
+    }
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        long[] l = new long[7];
+        int a = 0;
+        for (int i = 16; i > 3; i-=2){
+            l[a] = i;
+            a +=1;
+        }
+        System.out.print(Arrays.toString(l));
+    }
+}*/
+/*public class Main {
+    public static void main(String[] args){
+        System.out.print(f(-27));
+    }
+    public static double f(double x){
+        return Math.cbrt(x);
+    }
+}*/
+public class Main {
+    public static void main(String[] args){
+        long[] l = new long[7];
+        int a = 0;
+        for (int i = 16; i > 3; i-=2){
+            l[a] = i;
+            a +=1;
+        }
+        for (int i = 0; i < l.length; i++){
+            System.out.printf("%5.0f%n",(double) l[i]);
+        }
     }
 }
