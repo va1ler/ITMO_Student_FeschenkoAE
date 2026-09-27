@@ -87,6 +87,16 @@ public class Main {
         for (int i = 0; i < 7; i++){
             l[i] = 16-2*i;
         }
+        double[] x = new double[19];
+        for (int i = 0; i < 19; i++){
+            x[i] = Math.random() * 15.0 - 2.0;
+        }
+        double[][] n = new double[7][19];
+        for (int i = 0; i < 7; i++){
+            for (int j = 0; j < 19; j++){
+                n[i][j] = calculateElement(l[i], x[j]);
+            }
+        }
     }
     public static double calculateElement(long li, double x){
         return 0;
