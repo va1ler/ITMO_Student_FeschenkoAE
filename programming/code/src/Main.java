@@ -1,4 +1,4 @@
-public class Main {
+/*public class Main {
 
     public static void main(String[] args) {
         long[] l = new long[7];
@@ -38,5 +38,22 @@ public class Main {
             }
             System.out.println();
         }
+    }
+}*/
+
+
+
+public class Main{
+    public static void main(String[] args){
+        System.out.print(fun( 10,12,10));
+    }
+    public static double fun(int a, int b, int c){
+        return (double) a+b+c+99;
+    }
+    public static double fun(double a, double b, double c){
+        return (double) a+b+c-10000;
+    }
+    public static double fun(long a, long b, long c){
+        return (double) a+b+c+100000000;
     }
 }
