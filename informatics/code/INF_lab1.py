@@ -83,9 +83,9 @@ tetrady = {
     "C": "1100", "D": "1101", "E": "1110", "F": "1111",
 }
 
-celaya_chast = tetrady["A"] + tetrady["0"]          # A0 -> 10100000
-drobnaya_chast_polnaya = tetrady["6"] + tetrady["2"]  # 62 -> 01100010
-drobnaya_chast = drobnaya_chast_polnaya[:5]           # округление до 5 знаков (6-й знак 0)
+celaya_chast = tetrady["A"] + tetrady["0"]
+drobnaya_chast_polnaya = tetrady["6"] + tetrady["2"]
+drobnaya_chast = drobnaya_chast_polnaya[:5]
 
 print("5)", "A0,62(16) =", celaya_chast + "," + drobnaya_chast + "(2)")
 
@@ -97,8 +97,6 @@ triady = {
 }
 
 celaya_chast = (triady["1"] + triady["5"]).lstrip("0")
-drobnaya_chast_polnaya = triady["4"] + triady["1"]
-# 6-й знак = 1, значит округляем 5-й знак в большую сторону
 drobnaya_chast = "10001"
 
 print("6)", "15,41(8) =", celaya_chast + "," + drobnaya_chast + "(2)")
@@ -106,12 +104,12 @@ print("6)", "15,41(8) =", celaya_chast + "," + drobnaya_chast + "(2)")
 
 #7
 drob = "101011"
-drob = drob + "0" * ((4 - len(drob) % 4) % 4)   # дополнили до 1010 1100
+drob = drob + "0" * ((4 - len(drob) % 4) % 4)
 
-group1 = drob[0:4]   # 1010
-group2 = drob[4:8]   # 1100
+group1 = drob[0:4]
+group2 = drob[4:8]
 
-hex_cifry = {"1010": "A", "1100": "C"}   # словарь только для нужных групп
+hex_cifry = {"1010": "A", "1100": "C"}
 
 print("7)", "0,101011(2) = 0," + hex_cifry[group1] + hex_cifry[group2] + "(16)")
 
@@ -177,9 +175,9 @@ for i, ch in enumerate(cifry_sprava, start=1):
 print("11)", "142110(Факт) =", result11, "(10)")
 
 
-# 12
+#12
 cifry = "654"
-cifry_sprava = cifry[::-1]   # 4,5,6
+cifry_sprava = cifry[::-1]
 
 result12 = 0
 for i, ch in enumerate(cifry_sprava):
@@ -188,7 +186,7 @@ for i, ch in enumerate(cifry_sprava):
 print("12)", "654(-10) =", result12, "(10)")
 
 
-# 13
+#13
 n = 21512
 cifry_rezultata = []
 while n != 0:
