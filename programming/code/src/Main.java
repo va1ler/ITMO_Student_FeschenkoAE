@@ -1,4 +1,4 @@
-/*public class Main {
+public class Main {
 
     public static void main(String[] args) {
         long[] l = new long[7];
@@ -39,4 +39,4 @@
             System.out.println();
         }
     }
-}*/
+}
